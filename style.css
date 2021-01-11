@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kufam', cursive;
+}
+
+body{
+    background-color: rgb(231, 225, 219);
+}
+
+/* styling the header*/
+
+header h1{
+    text-align: center;
+    margin: 50px;
+    font-family: 'Noto Serif', serif;
+    color: rgb(58, 55, 55);
+}
+
+/* styling the personal information section*/
+
+section{
+    width: 75%;
+    margin: 10px auto
+}
+
+section h3{
+    font-size: 25px;
+    padding: 10px 10px 0;
+    color: rgb(104, 100, 100);
+}
+
+section h3.head{
+    padding-left: 50px;
+}
+
+#personal-info{
+    display: flex;
+    justify-content: center;
+    justify-content: start;
+    margin: 40px
+}
+
+#personal-info div img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 9px #888888;
+}
+
+#personal-info div img:hover{
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}
+
+#personal-info h2{
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 30px;
+    color: rgb(139, 101, 146);
+}
+
+#personal-info ul{
+    list-style-type: none;
+    padding: 20px 20px 20px 30px;
+}
+
+#personal-info ul li{
+    padding: 7px 10px;
+}
+
+#personal-info ul li:hover{
+    opacity: 0.7;
+}
+
+#personal-info ul li span{
+    color: rgb(23, 109, 76);
+    font-size: 22px;
+
+}
+
+#personal-info ul li i{
+    color: rgb(23, 109, 76);
+    font-size: 23px;
+    padding: 0 7px
+}
+
+#personal-info ul li a{
+    text-decoration: none;
+    color:black
+}
+
+/* styling the general information section*/
+
+#general-info{
+    display: flex;
+    width: 70%;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+#general-info .right-side{
+    width: 70%;
+    background-color: rgb(212, 218, 203);
+    border: 1px solid none;
+    border-radius: 0 3% 3% 0;
+    padding-top: 20px;
+    box-shadow: 5px 5px 9px #888888;
+}
+
+#general-info .left-side{
+    width: 30%;
+    background-color: rgb(187, 194, 175);
+    border: 1px solid none;
+    border-radius: 3% 0 0 3%;
+    padding-top: 20px;
+    box-shadow: 5px 5px 9px #888888;
+}
+
+#general-info div.education span{
+    display: block;
+}
+
+#general-info p{
+    padding: 13px;
+    margin-bottom: 5px;
+}
+
+#general-info ul{
+    list-style-type: none;
+    margin: 5px;
+}
+
+#general-info ul.hobbies{
+    list-style-type: square;
+    list-style-position: inside;
+    padding: 2px;
+}
+
+#general-info ul li{
+    padding: 13px;
+}
+
+#general-info ul.hobbies li{
+    padding: 5px;
+}
+
+#general-info div.experience span{
+    display: block;
+}
+
+#general-info ul li span{
+    color: rgb(23, 109, 76);
+    font-size: 22px;
+}
+
+#general-info ul li span:hover{
+    opacity: 0.7;
+}
+
+#general-info ul li span.thesis{
+   color: black;
+   font-size: 16px;
+}
+
+/* Responsive design */
+
+
+/* styling between 320px and 480px */
+
+@media only screen and (min-width:320px) and (max-width:480px){
+
+    /* styling the header*/
+
+    header h1{
+      font-size: 30px;
+    }
+
+    /* styling the personal information section*/
+
+    section{
+        width: 100%;
+    }
+
+    section h3{
+        font-size: 22px;
+    }
+    
+    section h3.head{
+        text-align: center;
+    }
+    
+    #personal-info{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px
+    }
+
+    #personal-info div img{
+        width: 250px;
+        height: 250px;
+    }
+    
+    #personal-info h2{
+        text-align: center;
+    }
+    
+    #personal-info ul li{
+        padding: 4px;
+        font-size: 14px;
+    }
+    
+    #personal-info ul li span{
+        font-size: 17px;
+    }
+    
+    #personal-info ul li i{
+        font-size: 15px;
+        padding: 4px
+    }
+
+    /* styling the general information section*/
+
+    #general-info{
+        width: 90%;
+        line-height: 23px;
+        flex-direction: column-reverse;
+    }
+    
+    #general-info .right-side, #general-info .left-side{
+        width: 100%;
+        padding-top: 20px;
+        background-color: rgb(187, 194, 175);
+    }
+    
+    #general-info .right-side{
+        border-radius: 3% 0 0 0;
+        box-shadow: none;
+    }
+    
+    #general-info .left-side{
+        border-radius: 0 0 3% 0;
+        box-shadow: none;
+    }
+    
+    #general-info ul li{
+        padding: 12px;
+    }
+    
+    #general-info ul.hobbies li{
+        padding: 5px;
+    }
+    
+    #general-info ul li span{
+        font-size: 20px;
+    }
+    
+    #general-info ul li span.thesis{
+       font-size: 15px;
+    }
+}
+
+
+/* styling between 481px and 768px */
+
+@media only screen and (min-width: 481px) and (max-width: 768px){
+
+    /* styling the personal information section*/
+
+    section{
+        width: 100%;
+    }
+
+    section h3{
+        font-size: 20px;
+    }
+    
+    section h3.head{
+        text-align: center;
+    }
+    
+    #personal-info{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px
+    }
+    
+    #personal-info h2{
+        text-align: center;
+    }
+    
+    #personal-info ul{
+        text-align: center;
+    }
+    
+    #personal-info ul li{
+        padding: 7px;
+    }
+    
+    #personal-info ul li span{
+        font-size: 20px;
+    }
+    
+    #personal-info ul li i{
+        font-size: 20px;
+        padding: 6px
+    }
+
+    /* styling the general information section*/
+
+    #general-info{
+        width: 90%;
+        line-height: 25px;
+        flex-direction: column-reverse;
+    }
+    
+    #general-info .right-side, #general-info .left-side{
+        width: 100%;
+        padding-top: 20px;
+        background-color: rgb(187, 194, 175);
+    }
+    
+    #general-info .right-side{
+        border-radius: 3% 0 0 0;
+        box-shadow: -5px -5px 9px #888888;
+        box-shadow: none;
+    }
+    
+    #general-info .left-side{
+        border-radius: 0 0 3% 0;
+        box-shadow: none
+    }
+    
+    #general-info ul li{
+        padding: 13px;
+    }
+    
+    #general-info ul.hobbies li{
+        padding: 5px;
+    }
+    
+    #general-info ul li span{
+        font-size: 22px;
+    }
+    
+    #general-info ul li span.thesis{
+       font-size: 16px;
+    }
+}
+
+/* styling between 769px and 1024px */
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px){
+
+    /* styling the personal information section*/
+
+    section{
+        width: 85%;
+    }
+
+    section h3{
+        font-size: 20px;
+        padding: 10px 10px 0;
+    }
+
+    div#personal-info{
+        margin: 20px
+    }
+
+    #personal-info div img{
+       width: 240px;
+       height: 240px
+    }
+
+    #personal-info h2{
+        padding: 15px;
+        font-weight: normal;
+        font-size: 25px;
+    }
+
+    #personal-info ul{
+        padding: 10px 10px 10px 20px;
+    }
+
+    #personal-info ul li{
+        padding: 4px 7px;
+    }
+    
+    #personal-info ul li span{
+        font-size: 17px;
+    }
+    
+    #personal-info ul li i{
+        font-size: 15px;
+        padding: 0 4px
+    }
+
+    /* styling the general information section*/
+
+    #general-info{
+        width: 80%;
+        line-height: 27px;
+        font-size: 14px;
+    }
+
+    #general-info p{
+        padding: 10px;
+    }
+
+    #general-info ul li{
+        padding: 10px;
+    }
+
+    #general-info ul li span{
+        font-size: 18px;
+    }
+    
+    #ageneral-info ul li span.thesis{
+       font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+    
