@@ -35,131 +35,130 @@ section h3.head{
     padding-left: 50px;
 }
 
-#personal-info{
+div.personal-info{
     display: flex;
     justify-content: center;
-    justify-content: start;
     margin: 40px
 }
 
-#personal-info div img{
+div.personal-info div img{
     width: 300px;
     height: 300px;
     border-radius: 50%;
     box-shadow: 5px 5px 9px #888888;
 }
 
-#personal-info div img:hover{
+div.personal-info div img:hover{
     transform: scale(1.1);
     transition: all .3s ease-in-out;
 }
 
-#personal-info h2{
+div.personal-info h2{
     padding: 20px;
     font-weight: bolder;
     font-size: 30px;
     color: rgb(139, 101, 146);
 }
 
-#personal-info ul{
+div.personal-info ul{
     list-style-type: none;
     padding: 20px 20px 20px 30px;
 }
 
-#personal-info ul li{
+div.personal-info ul li{
     padding: 7px 10px;
 }
 
-#personal-info ul li:hover{
+div.personal-info ul li:hover{
     opacity: 0.7;
 }
 
-#personal-info ul li span{
+div.personal-info ul li span{
     color: rgb(23, 109, 76);
     font-size: 22px;
 
 }
 
-#personal-info ul li i{
+div.personal-info ul li i{
     color: rgb(23, 109, 76);
     font-size: 23px;
     padding: 0 7px
 }
 
-#personal-info ul li a{
+div.personal-info ul li a{
     text-decoration: none;
     color:black
 }
 
 /* styling the general information section*/
 
-#general-info{
+section.general-info{
     display: flex;
     width: 70%;
     line-height: 30px;
     margin-bottom: 50px;
 }
 
-#general-info .right-side{
-    width: 70%;
+section.general-info .right-side{
+    flex: 70%;
     background-color: rgb(212, 218, 203);
-    border: 1px solid none;
+    border: 1px solid transparent;
     border-radius: 0 3% 3% 0;
     padding-top: 20px;
     box-shadow: 5px 5px 9px #888888;
 }
 
-#general-info .left-side{
-    width: 30%;
+section.general-info .left-side{
+    flex: 30%;
     background-color: rgb(187, 194, 175);
-    border: 1px solid none;
+    border: 1px solid transparent;
     border-radius: 3% 0 0 3%;
     padding-top: 20px;
     box-shadow: 5px 5px 9px #888888;
 }
 
-#general-info div.education span{
+section.general-info div.education span{
     display: block;
 }
 
-#general-info p{
+section.general-info p{
     padding: 13px;
     margin-bottom: 5px;
 }
 
-#general-info ul{
+section.general-info ul{
     list-style-type: none;
     margin: 5px;
 }
 
-#general-info ul.hobbies{
+section.general-info ul.hobbies{
     list-style-type: square;
     list-style-position: inside;
     padding: 2px;
 }
 
-#general-info ul li{
+section.general-info ul li{
     padding: 13px;
 }
 
-#general-info ul.hobbies li{
+section.general-info ul.hobbies li{
     padding: 5px;
 }
 
-#general-info div.experience span{
+section.general-info div.experience span{
     display: block;
 }
 
-#general-info ul li span{
+section.general-info ul li span{
     color: rgb(23, 109, 76);
     font-size: 22px;
 }
 
-#general-info ul li span:hover{
+section.general-info ul li span:hover{
     opacity: 0.7;
 }
 
-#general-info ul li span.thesis{
+section.general-info ul li span.thesis{
    color: black;
    font-size: 16px;
 }
@@ -191,72 +190,72 @@ section h3.head{
         text-align: center;
     }
     
-    #personal-info{
+    div.personal-info{
         flex-direction: column;
         align-items: center;
         margin: 20px
     }
 
-    #personal-info div img{
+    div.personal-info div img{
         width: 250px;
         height: 250px;
     }
     
-    #personal-info h2{
+    div.personal-info h2{
         text-align: center;
     }
     
-    #personal-info ul li{
+    div.personal-info ul li{
         padding: 4px;
         font-size: 14px;
     }
     
-    #personal-info ul li span{
+    div.personal-info ul li span{
         font-size: 17px;
     }
     
-    #personal-info ul li i{
+    div.personal-info ul li i{
         font-size: 15px;
         padding: 4px
     }
 
     /* styling the general information section*/
 
-    #general-info{
+    section.general-info{
         width: 90%;
         line-height: 23px;
         flex-direction: column-reverse;
     }
     
-    #general-info .right-side, #general-info .left-side{
-        width: 100%;
+    section.general-info .right-side, section.general-info .left-side{
+        flex: 100%;
         padding-top: 20px;
         background-color: rgb(187, 194, 175);
     }
     
-    #general-info .right-side{
+    section.general-info .right-side{
         border-radius: 3% 0 0 0;
         box-shadow: none;
     }
     
-    #general-info .left-side{
+    section.general-info .left-side{
         border-radius: 0 0 3% 0;
         box-shadow: none;
     }
     
-    #general-info ul li{
+    section.general-info ul li{
         padding: 12px;
     }
     
-    #general-info ul.hobbies li{
+    section.general-info ul.hobbies li{
         padding: 5px;
     }
     
-    #general-info ul li span{
+    section.general-info ul li span{
         font-size: 20px;
     }
     
-    #general-info ul li span.thesis{
+    section.general-info ul li span.thesis{
        font-size: 15px;
     }
 }
@@ -280,71 +279,70 @@ section h3.head{
         text-align: center;
     }
     
-    #personal-info{
+    div.personal-info{
         flex-direction: column;
         align-items: center;
         margin: 20px
     }
     
-    #personal-info h2{
+    div.personal-info h2{
         text-align: center;
     }
     
-    #personal-info ul{
+    div.personal-info ul{
         text-align: center;
     }
     
-    #personal-info ul li{
+    div.personal-info ul li{
         padding: 7px;
     }
     
-    #personal-info ul li span{
+    div.personal-info ul li span{
         font-size: 20px;
     }
     
-    #personal-info ul li i{
+    div.personal-info ul li i{
         font-size: 20px;
         padding: 6px
     }
 
     /* styling the general information section*/
 
-    #general-info{
+    section.general-info{
         width: 90%;
         line-height: 25px;
         flex-direction: column-reverse;
     }
     
-    #general-info .right-side, #general-info .left-side{
-        width: 100%;
+    section.general-info .right-side, section.general-info .left-side{
+        flex: 100%;
         padding-top: 20px;
         background-color: rgb(187, 194, 175);
     }
     
-    #general-info .right-side{
+    section.general-info .right-side{
         border-radius: 3% 0 0 0;
-        box-shadow: -5px -5px 9px #888888;
         box-shadow: none;
     }
     
-    #general-info .left-side{
+    section.general-info .left-side{
         border-radius: 0 0 3% 0;
         box-shadow: none
     }
     
-    #general-info ul li{
+    section.general-info ul li{
         padding: 13px;
     }
     
-    #general-info ul.hobbies li{
+    section.general-info ul.hobbies li{
         padding: 5px;
     }
     
-    #general-info ul li span{
+    section.general-info ul li span{
         font-size: 22px;
     }
     
-    #general-info ul li span.thesis{
+    section.general-info ul li span.thesis{
        font-size: 16px;
     }
 }
@@ -365,59 +363,59 @@ section h3.head{
         padding: 10px 10px 0;
     }
 
-    div#personal-info{
+    div.personal-info{
         margin: 20px
     }
 
-    #personal-info div img{
+    div.personal-info div img{
        width: 240px;
        height: 240px
     }
 
-    #personal-info h2{
+    div.personal-info h2{
         padding: 15px;
         font-weight: normal;
         font-size: 25px;
     }
 
-    #personal-info ul{
+    div.personal-info ul{
         padding: 10px 10px 10px 20px;
     }
 
-    #personal-info ul li{
+    div.personal-info ul li{
         padding: 4px 7px;
     }
     
-    #personal-info ul li span{
+    div.personal-info ul li span{
         font-size: 17px;
     }
     
-    #personal-info ul li i{
+    div.personal-info ul li i{
         font-size: 15px;
         padding: 0 4px
     }
 
     /* styling the general information section*/
 
-    #general-info{
+    section.general-info{
         width: 80%;
         line-height: 27px;
         font-size: 14px;
     }
 
-    #general-info p{
+    section.general-info p{
         padding: 10px;
     }
 
-    #general-info ul li{
+    section.general-info ul li{
         padding: 10px;
     }
 
-    #general-info ul li span{
+    section.general-info ul li span{
         font-size: 18px;
     }
     
-    #ageneral-info ul li span.thesis{
+    section.ageneral-info ul li span.thesis{
        font-size: 18px;
     }
 }
